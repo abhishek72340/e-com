@@ -7,6 +7,7 @@ const productContext = createContext();
 const ProductProvider = ({ children }) => {
   const [productData, setProductData] = useState(data);
   const [cartItem, setCartItem] = useState([]);
+  const [quantities, setQuantities] = useState({});
 
   const addItem = (product) => {
     setCartItem([...cartItem, product]);
@@ -19,8 +20,6 @@ const ProductProvider = ({ children }) => {
   useEffect(() => {
     setProductData(productData);
   }, [productData]);
-
-  const [quantities, setQuantities] = useState({});
 
   const incrementQuantity = (item) => {
     setQuantities((prevQuantities) => ({
@@ -37,9 +36,27 @@ const ProductProvider = ({ children }) => {
       }));
     }
   };
+
+  const calculateTotal = () => {
+    let total = 0;
+    cartItem.forEach((item) => {
+      total += (quantities[item.id] || 1) * item.price;
+    });
+    return total;
+  };
+
   return (
     <productContext.Provider
-      value={{ productData, addItem, cartItem, removeItem,quantities }}
+      value={{
+        productData,
+        addItem,
+        cartItem,
+        removeItem,
+        quantities,
+        incrementQuantity,
+        decrementQuantity,
+        calculateTotal,
+      }}
     >
       {children}
     </productContext.Provider>

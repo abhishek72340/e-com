@@ -24,7 +24,7 @@ const Cart = () => {
                 +
               </button>
               <p className="text-center mt-[10rem] ml-[25rem] absolute font-bold">
-                $ {quantities[item.id] || 1}
+                qnt:{quantities[item.id] || 1}
               </p>
               <button
                 className="text-center mt-[10rem] ml-[22rem] absolute font-bold text-2xl text-red-500 "
@@ -40,6 +40,7 @@ const Cart = () => {
 
                 <div className="mt-2">
                   <p className="text-center font-semibold"> {item.title}</p>
+                  <p className="font-semibold"> ${item.price}</p>
                   <button
                     className="bg-red-500 text-white w-40"
                     onClick={() => removeItem(item)}
