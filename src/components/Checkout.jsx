@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/navigation";
-import { useProduct } from "../../../dil-food/src/context/product-context";
+import { useProduct } from "../context/product-context";
 const Checkout = () => {
   const {
     cartItem,
@@ -22,7 +22,7 @@ const Checkout = () => {
           className="bg-red-500 text-white w-60 h-10 mt-5"
           onClick={() => router.push("/cart-address")}
         >
-          place order
+          proceed to pay
         </button>
       </div>
       <div className="absolute bottom-[7rem] mr-[12rem] text-red-500">

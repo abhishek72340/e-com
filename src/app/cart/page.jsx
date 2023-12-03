@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { useProduct } from "../../../src/context/product-context";
-import Checkout from "../../../src/components/Checkout";
+import { useProduct } from "../../context/product-context";
+import Checkout from "../../components/Checkout";
 const Cart = () => {
   const {
     cartItem,

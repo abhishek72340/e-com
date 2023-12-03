@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import CheckoutDetail from "../../../src/components/checkout-detail/CheckoutDetail";
+import CheckoutDetail from "../../components/checkout-detail/CheckoutDetail";
 const CartAddress = () => {
   const [address, setAddress] = useState({
     street: "",
