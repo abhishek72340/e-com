@@ -1,0 +1,181 @@
+
+ { "products" : [
+  {
+    "id": 1,
+   " title": "maxi dress",
+    "price": "99",
+    "title":"maxi dress",
+    
+    "categoryName": "women",
+    "rating":4,
+    "type":"'clothing'",
+    "stock":true,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/10/6369928-1-mint.jpg"
+    
+  },
+  {
+    "id": 2,   
+    "title": "slip dress",
+    "price": "79",
+    
+    "categoryName": "women",
+    "rating":3,
+    "type":"'clothing'",
+    "stock":true,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2017/01/stardust-slip-black-01.jpg"
+    
+  },
+  {
+    "id":  3,
+    "title": "faux suide",
+    "price": "29",
+      
+    "rating":2,
+    "type":"'clothing'",
+    "stock":false,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/11/6950715-1-mint.jpeg"
+    
+  },
+  {
+    "id":   4,
+    "title": "crop top",
+    "price": "69",
+    
+    
+    "categoryName": "women",
+    "rating":1,
+    "type":"'clothing'",
+    "stock":true,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/11/7071727-1-chartreuse.jpeg"
+    
+  },
+  {
+    "id":   5,
+     "title": "bodycon dress",
+    "price": "99",
+    
+    
+    "rating":4,
+    "type":"'clothing'",
+    "stock":false,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/12/7183324-1-khaki.jpeg"
+    
+  },
+  {
+    "id":   6,
+    "title": "woven top",
+    "price": "28",
+    
+    
+    "categoryName": "women",
+    "rating":3,
+    "type":"'clothing'",
+    "stock":true,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/11/7100131-1-green.jpeg"
+    
+  },
+  {
+    "id": 7 ,
+      "title": "flannel shirt",
+    "price": "29",
+    
+    "categoryName": "men",
+    "rating":2,
+    "type":"'clothing'",
+    "stock":true,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/11/6833618-1-green.jpeg"
+    
+  },
+  {
+    "id": 8,
+   "title": "khaki twill",
+    "price": "24",
+  
+    "rating":1,
+    "type":"'clothing'",
+    "stock":true,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/10/5796822-1-green.jpg"
+    
+  },
+  {
+    "id": 9,
+   "title": "sort slives",
+    "price": "24",
+    "categoryName": "men",
+    "rating":4,
+    "type":"'clothing'",
+    "stock":false,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/10/6026004-1-fourleafclover.jpg"
+    
+  },
+  {
+    "id":10, 
+    "title": "hooded jacket", 
+    "price": "64",
+        "categoryName": "men",
+    "rating":5,
+    "type":"'clothing'",
+    "stock":true,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/10/7038094-1-black100.jpg"
+    
+  },
+  {
+    "id": 11,
+   "title": "blazze",
+    "price": "55",
+    "categoryName": "men",
+    "rating":5,
+    "type":"'clothing'",
+    "stock":false,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/10/6274395-1-lightblue.jpg"
+  },
+  {
+    "id":  12, 
+     "title": "home overcoat",
+    "price": "25", 
+
+    "categoryName": "men",
+    "rating":3,
+    "type":"'clothing'",
+    "stock":true,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/11/6673031-1-camel.jpeg"
+    
+  },
+  {
+    "id":13, 
+   "title": "running trainers",
+    "price": "20",
+    "type":"shoe",
+    "categoryName": "shoe",
+    "rating":1,
+   
+    "stock":true,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2017/02/5319455539121_006_d-1.jpg"
+   
+  },
+  {
+    "id": 14,
+   "title": "996 running trainers",
+    "price": "19",
+    "categoryName": "shoe",
+    "rating":2,
+    "type":"shoe",
+
+    "stock":true,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2016/12/nb-996-1.jpg"
+      },
+  {
+    "id": 15,
+   "title": "skoool ultramarine",
+    "price": "59",
+    "type":"shoe",
+
+    "categoryName": "shoe",
+    "rating":5,
+   
+    "stock":false,
+    "image":"https://eva.temashdesign.me/fashion/wp-content/uploads/sites/2/2017/02/5319455539121_006_d.jpg"
+  
+  }
+]
+ }
