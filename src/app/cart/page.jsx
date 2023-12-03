@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useProduct } from "../../context/product-context";
-import Checkout from "../../components/Checkout";
+import Checkout from "../../components/checkout/Checkout";
 const Cart = () => {
   const {
     cartItem,
@@ -12,7 +12,6 @@ const Cart = () => {
     decrementQuantity,
     quantities,
   } = useProduct();
-
   return (
     <div className="flex flex-row">
       <div>

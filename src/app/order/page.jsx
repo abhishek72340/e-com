@@ -1,22 +1,24 @@
 "use client";
 import { useProduct } from "../../context/product-context";
 const Order = () => {
-  const { myOrder } = useProduct();
+  const { myOrder, calculateTotal } = useProduct();
   return (
     <div>
-      <h2 className="text-center text-2xl font-bold mt-20">Order Summary</h2>
+      {myOrder.length ? (
+        <h2 className="text-center text-2xl font-bold mt-20">Order Summary</h2>
+      ) : null}
+
       {myOrder.length ? (
         myOrder.map((item, index) => {
           return (
             <div
               key={index}
-              className="flex justify-center items-center m-10 flex-col h-[100vh] text-red-500 border border-black text-2xl"
+              className="flex justify-center items-center m-10 flex-col h-[100vh] text-red-500 text-2xl"
             >
               <h3>Transaction Id:-{item.txNum}</h3>
               <h3>Product:-{item.title}</h3>
               <h3>Price:-{item.price}</h3>
               <h3>Date:-{item.dateOfPurchase}</h3>
-              <h3>Quantity:-{item.quantities}</h3>
             </div>
           );
         })

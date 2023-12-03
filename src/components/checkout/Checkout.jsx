@@ -1,11 +1,10 @@
 "use client";
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { useProduct } from "../context/product-context";
+import { useProduct } from "../../context/product-context";
 const Checkout = () => {
   const { cartItem, calculateTotal, setMyOrder, setCartItem } = useProduct();
   const router = useRouter();
-
   //RAZOR-PAY//
   useEffect(() => {
     const script = document.createElement("script");
@@ -28,17 +27,14 @@ const Checkout = () => {
         {
           id: product.id,
           title: product.title,
-          quantity: product.quantities,
-          price: product.price * product.quantities,
+          price: product.price,
           txNum: payment.razorpay_payment_id,
           dateOfPurchase: new Date().toDateString(),
         },
       ])
     );
-
     router.push("/order");
     window.scrollTo({ top: 0, scroll: "instant" });
-    setCartItem("");
   };
 
   const handlePaymentError = (error) => {
@@ -64,7 +60,6 @@ const Checkout = () => {
       description: "Thank you for your test purchase",
       image: "",
       handler: handlePaymentSuccess,
-
       theme: {
         color: "#0e5db3",
       },
