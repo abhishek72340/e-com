@@ -52,15 +52,8 @@ const Checkout = () => {
       return;
     }
 
+    // call function for total amount
     const totalAmount = calculateTotal();
-    // cartItem.length > 0
-    //   ? Math.round(
-    //       cartItem.reduce(
-    //         (acc, curr) => acc + curr.price * curr.quantities * 100,
-    //         0
-    //       )
-    //     )
-    //   : null;
 
     //Razor-Pay Integrate//
     const options = {
