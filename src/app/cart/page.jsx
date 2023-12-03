@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useProduct } from "../../context/product-context";
 import Checkout from "../../components/Checkout";
 const Cart = () => {
@@ -37,13 +38,16 @@ const Cart = () => {
                 key={item.id}
                 className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 shadow-lg p-4 mb-4 bg-white m-20"
               >
-                <Image
-                  src={item.image}
-                  alt="image"
-                  width={7000}
-                  height={7000}
-                  className="w-full h-auto "
-                />
+                <Link href={`/product-details/${item.id}`}>
+                  {" "}
+                  <Image
+                    src={item.image}
+                    alt="image"
+                    width={7000}
+                    height={7000}
+                    className="w-full h-auto "
+                  />
+                </Link>
 
                 <div className="mt-2">
                   <p className="text-center font-semibold"> {item.title}</p>
