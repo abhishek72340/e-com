@@ -64,7 +64,7 @@ const Cart = () => {
           );
         })}
       </div>
-      <Checkout />
+      {cartItem.length ? <Checkout /> : null}
     </div>
   );
 };
