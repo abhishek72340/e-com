@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { useProduct } from "../../../context/product-context";
 const Product = ({ params: { pid } }) => {
   const { productData, addItem, cartItem } = useProduct();
@@ -11,9 +12,11 @@ const Product = ({ params: { pid } }) => {
   return (
     <div className="flex justify-center  items-center gap-[7rem] m-20">
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 shadow-lg p-4 mb-4 bg-white m-10">
-        <img
+        <Image
           src={productDetails.image}
           alt="image"
+          width="1000"
+          height="1000"
           className="w-full h-auto "
         />
       </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useProduct } from "../../src/context/product-context";
-const page = () => {
+const Home = () => {
   const { productData, addItem, cartItem } = useProduct();
   const router = useRouter();
   return (
@@ -17,7 +17,13 @@ const page = () => {
           >
             <Link href={`/product-details/${items.id}`}>
               {" "}
-              <img src={items.image} alt="image" className="w-full h-auto " />
+              <Image
+                src={items.image}
+                alt="image"
+                width="1000"
+                height="1000"
+                className="w-full h-auto "
+              />
             </Link>
 
             <div className="mt-2">
@@ -46,4 +52,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;
